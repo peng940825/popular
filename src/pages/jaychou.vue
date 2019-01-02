@@ -88,27 +88,27 @@
           {
             title: '我很忙',
             year: '2007',
-            src: '../../static/jaychou/2007.png'
+            src: './static/jaychou/2007.png'
           },
           {
             title: '魔杰座',
             year: '2008',
-            src: '../../static/jaychou/2008.png'
+            src: './static/jaychou/2008.png'
           },
           {
             title: '驚嘆號',
             year: '2011',
-            src: '../../static/jaychou/2011.png'
+            src: './static/jaychou/2011.png'
           },
           {
             title: '十二星座',
             year: '2014',
-            src: '../../static/jaychou/2012.png'
+            src: './static/jaychou/2012.png'
           },
           {
             title: '唉呦，不錯哦',
             year: '2016',
-            src: '../../static/jaychou/2014.png'
+            src: './static/jaychou/2014.png'
           }
         ],
         jay_songs: [],

@@ -88,17 +88,17 @@
           {
             title: 'I - The 1st Mini Album - EP',
             year: '2015',
-            src: '../../static/taeyeon/2015.png'
+            src: './static/taeyeon/2015.png'
           },
           {
             title: 'Why - The 2st Mini Album - EP',
             year: '2016',
-            src: '../../static/taeyeon/2016.png'
+            src: './static/taeyeon/2016.png'
           },
           {
             title: 'Stay - Single',
             year: '2018',
-            src: '../../static/taeyeon/2018.png'
+            src: './static/taeyeon/2018.png'
           }
         ],
         taeyeon_songs: [],

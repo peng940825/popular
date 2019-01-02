@@ -88,12 +88,12 @@
           {
             title: 'In Our Bones',
             year: '2016',
-            src: '../../static/atc/2016.png'
+            src: './static/atc/2016.png'
           },
           {
             title: 'Past Lives',
             year: '2018',
-            src: '../../static/atc/2018.png'
+            src: './static/atc/2018.png'
           }
         ],
         atc_songs: [],

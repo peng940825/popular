@@ -88,12 +88,12 @@
           {
             title: 'Heartbreaker',
             year: '2009',
-            src: '../../static/gdragon/2009.png'
+            src: './static/gdragon/2009.png'
           },
           {
             title: `COUP D'ETAT`,
             year: '2013',
-            src: '../../static/gdragon/2013.png'
+            src: './static/gdragon/2013.png'
           }
         ],
         gdragon_songs: [],

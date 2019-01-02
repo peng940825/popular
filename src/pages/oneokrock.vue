@@ -88,22 +88,22 @@
           {
             title: '残響リファレンス',
             year: '2011',
-            src: '../../static/oneokrock/2011.png'
+            src: './static/oneokrock/2011.png'
           },
           {
             title: '人生×僕＝',
             year: '2013',
-            src: '../../static/oneokrock/2013.png'
+            src: './static/oneokrock/2013.png'
           },
           {
             title: '35xxxv',
             year: '2015',
-            src: '../../static/oneokrock/2015.png'
+            src: './static/oneokrock/2015.png'
           },
           {
             title: 'Ambitions',
             year: '2017',
-            src: '../../static/oneokrock/2017.png'
+            src: './static/oneokrock/2017.png'
           }
         ],
         oneokrock_songs: [],
