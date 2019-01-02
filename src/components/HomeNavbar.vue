@@ -46,14 +46,17 @@
                   <router-link class="nav-link" to="/music/shoppingcart">
                     <i class="fas fa-shopping-cart" style="font-size: 20px"></i>
                   </router-link>
-                  <span class="badge" style="background-color: #D2691E">
+                  <span class="badge num-badge" style="background-color: #D2691E">
                     <Num></Num>
                     <Audio></Audio>
                   </span>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-orange rounded-0" @click.prevent="login">登入</button>
+              <form class="form-inline my-2 my-lg-0" style="position: relative;">
+                <button class="btn btn-outline-orange rounded-0" @click.prevent="login">
+                  登入
+                </button>
+                <span class="badge badge-info prompt">限管理員</span>
               </form>
             </div>
           </nav>

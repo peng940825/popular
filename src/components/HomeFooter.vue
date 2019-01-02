@@ -10,7 +10,7 @@
               </a>
             </li>
             <li class="mr-4">
-              <a href="https://github.com/ambition1994" target="_blank">
+              <a href="https://github.com/ice1994" target="_blank">
                 <i class="fab fa-github text-white" style="font-size: 28px;"></i>
               </a>
             </li>

@@ -54,7 +54,7 @@
       </div>
 
       <!-- customer form -->
-      <div class="py-5 row justify-content-center">
+      <div class="py-5 row justify-content-center" v-if="cart.total > 0">
         <form class="col-md-6" @submit.prevent="createOrder">
           <div class="form-group">
             <label class="text-white" for="useremail">收件人信箱</label>
