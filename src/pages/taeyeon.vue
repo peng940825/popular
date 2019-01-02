@@ -12,68 +12,70 @@
       </div>
       <div class="row">
         <div class="col mb-5">
-          <table class="table table-borderless mt-5" v-if="check">
-            <thead>
-              <tr>
-                <th scope="col" width="30"></th>
-                <th scope="col" style="min-width: 175px">歌曲</th>
-                <th scope="col" width="90" class="d-none d-sm-block">類型</th>
-                <th scope="col" width="60">長度</th>
-                <th scope="col" width="30"></th>
-                <th scope="col" width="60"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(item, index) in taeyeon_songs" :key="index">
-                <th scope="row">{{ index + 1 }}</th>
-                <td>{{ item.content }}</td>
-                <td class="d-none d-sm-block">{{ item.category }}</td>
-                <td>{{ item.description }}</td>
-                <td>
-                  <div class="play-icon" v-if="changeStyle === ''" @click="play(item.content, true)">
-                    <i class="fas fa-play ml-2"></i>
-                  </div>
-                  <div class="play-icon" v-if="changeStyle === item.content" @click="stop(item.content, false)">
-                    <i class="fas fa-grip-lines-vertical ml-2"></i>
-                  </div>
-                </td>
-                <td class="text-right pr-0">
-                  <button class="btn btn-outline-orange rounded-0" @click="addToCart(item.id)">購買</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="table table-borderless mt-5" v-else>
-            <thead>
-              <tr>
-                <th scope="col" width="30"></th>
-                <th scope="col" style="min-width: 175px">歌曲</th>
-                <th scope="col" width="90" class="d-none d-sm-block">類型</th>
-                <th scope="col" width="60">長度</th>
-                <th scope="col" width="30"></th>
-                <th scope="col" width="60"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(item, index) in single_album" :key="index">
-                <th scope="row">{{ index + 1 }}</th>
-                <td>{{ item.content }}</td>
-                <td class="d-none d-sm-block">{{ item.category }}</td>
-                <td>{{ item.description }}</td>
-                <td>
-                  <div class="play-icon" v-if="changeStyle === ''" @click="play(item.content, true)">
-                    <i class="fas fa-play ml-2"></i>
-                  </div>
-                  <div class="play-icon" v-if="changeStyle === item.content" @click="stop(item.content, false)">
-                    <i class="fas fa-grip-lines-vertical ml-2"></i>
-                  </div>
-                </td>
-                <td class="text-right pr-0">
-                  <button class="btn btn-outline-orange rounded-0" @click="addToCart(item.id)">購買</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="table table-borderless mt-5" v-if="check">
+              <thead>
+                <tr>
+                  <th scope="col" width="30"></th>
+                  <th scope="col" style="min-width: 175px">歌曲</th>
+                  <th scope="col" width="90" class="d-none d-sm-block">類型</th>
+                  <th scope="col" width="60">長度</th>
+                  <th scope="col" width="30"></th>
+                  <th scope="col" width="60"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(item, index) in taeyeon_songs" :key="index">
+                  <th scope="row">{{ index + 1 }}</th>
+                  <td>{{ item.content }}</td>
+                  <td class="d-none d-sm-block">{{ item.category }}</td>
+                  <td>{{ item.description }}</td>
+                  <td>
+                    <div class="play-icon" v-if="changeStyle === ''" @click="play(item.content, true)">
+                      <i class="fas fa-play ml-2"></i>
+                    </div>
+                    <div class="play-icon" v-if="changeStyle === item.content" @click="stop(item.content, false)">
+                      <i class="fas fa-grip-lines-vertical ml-2"></i>
+                    </div>
+                  </td>
+                  <td class="text-right pr-0">
+                    <button class="btn btn-outline-orange rounded-0" @click="addToCart(item.id)">購買</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table-borderless mt-5" v-else>
+              <thead>
+                <tr>
+                  <th scope="col" width="30"></th>
+                  <th scope="col" style="min-width: 175px">歌曲</th>
+                  <th scope="col" width="90" class="d-none d-sm-block">類型</th>
+                  <th scope="col" width="60">長度</th>
+                  <th scope="col" width="30"></th>
+                  <th scope="col" width="60"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(item, index) in single_album" :key="index">
+                  <th scope="row">{{ index + 1 }}</th>
+                  <td>{{ item.content }}</td>
+                  <td class="d-none d-sm-block">{{ item.category }}</td>
+                  <td>{{ item.description }}</td>
+                  <td>
+                    <div class="play-icon" v-if="changeStyle === ''" @click="play(item.content, true)">
+                      <i class="fas fa-play ml-2"></i>
+                    </div>
+                    <div class="play-icon" v-if="changeStyle === item.content" @click="stop(item.content, false)">
+                      <i class="fas fa-grip-lines-vertical ml-2"></i>
+                    </div>
+                  </td>
+                  <td class="text-right pr-0">
+                    <button class="btn btn-outline-orange rounded-0" @click="addToCart(item.id)">購買</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

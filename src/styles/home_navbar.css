@@ -28,7 +28,7 @@
   position: relative;
 }
 
-.badge {
+.num-badge {
   position: absolute;
   top: -2.5px;
   left: 22.5px;
@@ -36,5 +36,11 @@
 
 .space {
   letter-spacing: 1px;
+}
+
+.prompt {
+  position: absolute;
+  top: -7.5px;
+  left: 40px;
 }
 /*# sourceMappingURL=home_navbar.css.map */

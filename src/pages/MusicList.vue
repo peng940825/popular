@@ -6,39 +6,41 @@
       <input class="form-control mx-auto w-50 mt-4" type="text" placeholder="搜尋歌曲" v-model="search" style="margin-top: 10px;">
       <div class="row">
         <div class="col mb-5">
-          <table class="table table-borderless mt-5">
-            <thead>
-              <tr>
-                <th scope="col" width="30"></th>
-                <th scope="col" width="60" style="min-width: 75px">歌手</th>
-                <th scope="col" style="min-width: 175px">歌曲</th>
-                <th scope="col" width="90" class="d-none d-md-block">類型</th>
-                <th scope="col" width="60">長度</th>
-                <th scope="col" width="30"></th>
-                <th scope="col" width="60"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(item, index) in filter_songs" :key="index">
-                <th scope="row">{{ index + 1 }}</th>
-                <td>{{ item.unit }}</td>
-                <td>{{ item.content }}</td>
-                <td class="d-none d-md-block">{{ item.category }}</td>
-                <td>{{ item.description }}</td>
-                <td>
-                  <div class="play-icon" v-if="changeStyle === ''" @click="play(item.content, true)">
-                    <i class="fas fa-play ml-2"></i>
-                  </div>
-                  <div class="play-icon" v-if="changeStyle === item.content" @click="stop(item.content, false)">
-                    <i class="fas fa-grip-lines-vertical ml-2"></i>
-                  </div>
-                </td>
-                <td class="text-right pr-0">
-                  <button class="btn btn-outline-orange rounded-0" @click="addToCart(item.id)">購買</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="table table-borderless mt-5">
+              <thead>
+                <tr>
+                  <th scope="col" width="30"></th>
+                  <th scope="col" width="60" style="min-width: 75px" class="d-none d-md-block">歌手</th>
+                  <th scope="col" style="min-width: 175px">歌曲</th>
+                  <th scope="col" width="90" class="d-none d-md-block">類型</th>
+                  <th scope="col" width="60">長度</th>
+                  <th scope="col" width="30"></th>
+                  <th scope="col" width="60"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(item, index) in filter_songs" :key="index">
+                  <th scope="row">{{ index + 1 }}</th>
+                  <td class="d-none d-md-block">{{ item.unit }}</td>
+                  <td>{{ item.content }}</td>
+                  <td class="d-none d-md-block">{{ item.category }}</td>
+                  <td>{{ item.description }}</td>
+                  <td>
+                    <div class="play-icon" v-if="changeStyle === ''" @click="play(item.content, true)">
+                      <i class="fas fa-play ml-2"></i>
+                    </div>
+                    <div class="play-icon" v-if="changeStyle === item.content" @click="stop(item.content, false)">
+                      <i class="fas fa-grip-lines-vertical ml-2"></i>
+                    </div>
+                  </td>
+                  <td class="text-right pr-0">
+                    <button class="btn btn-outline-orange rounded-0" @click="addToCart(item.id)">購買</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
