@@ -1,0 +1,151 @@
+* {
+  color: #fff;
+}
+
+@mixin tour_btn {
+  width: 160px;
+  height: 45px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+// atc
+
+#atc_content > p {
+  margin: 5px 0;
+  letter-spacing: 5px;
+}
+
+.atc-title {
+  color: #FEAEA6;
+  font-size: 36px;
+  letter-spacing: 2.5px;
+}
+
+.atc-btn {
+  @include tour_btn;
+  border: 1px solid #FEAEA6;
+
+  &:hover {
+    background-color: #fff;
+    color: #FEAEA6;
+  }
+}
+
+.atc-border {
+  border-bottom: 1px solid #FEAEA6;
+}
+
+// oor
+
+.oor-title {
+  color: #9774Af;
+  font-size: 36px;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  letter-spacing: 2.5px;
+}
+
+.oor-btn-1 {
+  @include tour_btn;
+  color: #9774Af;
+  border: 2px solid #9774af;
+
+  &:hover {
+    color: #fff;
+    background-color: #9774af;
+  }
+}
+
+.oor-btn-2 {
+  @include tour_btn;
+  background-color: #9774af;
+  border: 2px solid #9774af;
+  margin-left: 10px;
+
+  &:hover {
+    color: #9774af;
+    background-color: #fff;
+    border: 2px solid #fff;
+  }
+}
+
+.oor-color {
+  color: #9774af;
+}
+
+.oor-border {
+  border-top: 1px solid #333;
+
+  // &:last-child {
+  //   border-bottom: 1px solid #333;
+  // }
+}
+
+#oor_content > p {
+  letter-spacing: 2.5px;
+}
+
+@keyframes fadeIn_left {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+    filter: saturate(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+    filter: saturate(100%);
+  }
+}
+
+// @keyframes fadeIn_right {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(150px);
+//     filter: saturate(0%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0px);
+//     filter: saturate(100%);
+//   }
+// }
+
+// .active {
+//   &:nth-child(n+1) {
+//     animation: fadeIn_left 1.5s ease both;
+//   }
+
+//   &:nth-child(2n+1) {
+//     animation: fadeIn_right 1.5s ease both;
+//   }
+// }
+
+.fade-enter-active, .fade-leave-active {
+  transition: .5s;
+  transform: translateY(0px) rotate(0deg);
+}
+
+.fade-enter, .fade-leave {
+  opacity: 0;
+  transform: translateY(50px) rotate(15deg);
+}
+
+.insert-enter-active, .insert-leave-active {
+  transition: .5s;
+  transform: translateX(0px);
+}
+
+.insert-enter, .insert-leave {
+
+  &:nth-child(n+1) {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  &:nth-child(2n+1) {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+}

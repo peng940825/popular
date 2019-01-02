@@ -1,0 +1,23 @@
+.page-title {
+  font-size: 36px;
+  letter-spacing: 2.5px;
+}
+
+.album-style {
+  cursor: pointer;
+  max-width: 175px;
+}
+
+.play-icon {
+  cursor: pointer;
+  width: 30px;
+}
+
+table tr {
+  border-top: 1px solid #333;
+}
+
+table tr th, table tr td {
+  color: #fff;
+}
+/*# sourceMappingURL=music_list.css.map */

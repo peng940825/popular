@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker');
+
+.home-logo {
+  color: #D2691E;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.router-link-style {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  margin-top: 11px;
+
+  .dropdown-item {
+    color: #fff;
+
+    &:hover {
+      color: #D2691E;
+      background-color: #171717;
+    }
+  }
+}
+
+.link-cart {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -2.5px;
+  left: 22.5px;
+}
+
+.space {
+  letter-spacing: 1px;
+}
