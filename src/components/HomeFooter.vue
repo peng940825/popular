@@ -6,16 +6,16 @@
           <ul class="d-flex justify-content-center pl-0 mb-3" style="list-style: none;">
             <li class="mr-4">
               <a href="https://www.facebook.com/profile.php?id=100000402032431" target="_blank">
-                <i class="fab fa-facebook text-white" style="font-size: 28px;"></i>
+                <i class="fab fa-facebook text-white"></i>
               </a>
             </li>
             <li class="mr-4">
-              <a href="https://github.com/ice1994" target="_blank">
-                <i class="fab fa-github text-white" style="font-size: 28px;"></i>
+              <a href="https://github.com/ambition1994" target="_blank">
+                <i class="fab fa-github text-white"></i>
               </a>
             </li>
             <li data-toggle="tooltip" data-placement="right" title="gene4137@gmail.com">
-                <i class="fas fa-envelope text-white" style="font-size: 30px;"></i>
+                <i class="fas fa-envelope text-white"></i>
             </li>
           </ul>
           <P class="h6 text-white mb-3">圖片版權屬於 iTunes 所有</P>
@@ -35,3 +35,17 @@
     }
   }
 </script>
+
+<style scoped>
+  @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+  p {
+    font-size: .85rem;
+    letter-spacing: 2.5px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  i {
+    font-size: 24px;
+  }
+</style>

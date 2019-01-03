@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col">
           <nav class="navbar navbar-dark navbar-expand-lg px-0">
-            <router-link class="home-logo mr-5 space" to="/">
+            <router-link class="home-logo mr-5" to="/">
               POPULAR
             </router-link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">

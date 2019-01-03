@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
 
 .home-logo {
   color: #D2691E;
   font-size: 2rem;
   text-decoration: none;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Gochi Hand', cursive;
+  font-weight: bold;
 }
 
 .router-link-style {
@@ -37,6 +39,7 @@
 
 .space {
   letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .prompt {

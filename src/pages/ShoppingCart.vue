@@ -92,7 +92,7 @@
               v-model="form.message"></textarea>
           </div>
           <div class="text-right">
-            <button class="btn btn-success rounded-0">送出訂單</button>
+            <button class="btn btn-success">送出訂單</button>
           </div>
         </form>
       </div>

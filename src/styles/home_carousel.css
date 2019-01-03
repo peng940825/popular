@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,9 +76,10 @@
 }
 
 .carousel_box .text_content h1 {
+  font-size: 72px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 15px;
-  font-size: 75px;
-  font-weight: 500;
 }
 
 @-webkit-keyframes fadeIn {

@@ -3,7 +3,7 @@
     <loading :active.sync="isLoading"></loading>
     <div class="container pt-5">
       <p class="text-white text-center page-title mb-0">單曲列表</p>
-      <input class="form-control mx-auto w-50 mt-4" type="text" placeholder="搜尋歌曲" v-model="search" style="margin-top: 10px;">
+      <input class="form-control mx-auto w-25 mt-5" type="text" placeholder="搜尋歌曲" v-model="search" style="margin-top: 10px;">
       <div class="row">
         <div class="col mb-5">
           <div class="table-responsive">

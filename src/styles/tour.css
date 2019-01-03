@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 * {
   color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 #atc_content > p {
@@ -16,9 +18,9 @@
 .atc-btn {
   width: 160px;
   height: 45px;
-  cursor: pointer;
   background-color: transparent;
   border: 1px solid #FEAEA6;
+  letter-spacing: 2.5px;
 }
 
 .atc-btn:hover {
@@ -41,10 +43,10 @@
 .oor-btn-1 {
   width: 160px;
   height: 45px;
-  cursor: pointer;
   background-color: transparent;
   color: #9774Af;
   border: 2px solid #9774af;
+  letter-spacing: 2.5px;
 }
 
 .oor-btn-1:hover {
@@ -55,11 +57,11 @@
 .oor-btn-2 {
   width: 160px;
   height: 45px;
-  cursor: pointer;
   background-color: transparent;
   background-color: #9774af;
   border: 2px solid #9774af;
   margin-left: 10px;
+  letter-spacing: 2.5px;
 }
 
 .oor-btn-2:hover {

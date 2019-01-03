@@ -31,7 +31,7 @@
     },
     {
       title: 'ATC',
-      img_url: './static/carousel_img/img2.jpg',
+      img_url: './static/carousel_img/img2.png',
       path: 'atc'
     },
     {
