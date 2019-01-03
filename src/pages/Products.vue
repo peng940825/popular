@@ -159,7 +159,7 @@
         const vm = this
         const api = `${process.env.API_PATH}/api/${process.env.SELF_PATH}/products?page=${page}`
         this.$http.get(api).then((res) => {
-          console.log(res)
+          // console.log(res)
           vm.products = res.data.products
           vm.pagination = res.data.pagination
         })

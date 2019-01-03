@@ -182,7 +182,7 @@
         const vm = this
         const api = `${process.env.API_PATH}/api/${process.env.SELF_PATH}/orders?page=1`
         this.$http.get(api).then((res) => {
-          console.log(res)
+          // console.log(res)
         })
       }
     },
