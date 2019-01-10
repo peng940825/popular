@@ -12,7 +12,7 @@
 
 .news-title {
   font-size: 36px;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
   letter-spacing: 2.5px;
 }
 
@@ -51,4 +51,23 @@ form {
   .img-6 {
     background-image: url(../../static/album_img/img6.png);
   }
+}
+
+table {
+  tr {
+    border-top: 1px solid #333;
+
+    &:last-child {
+      border-bottom: 1px solid #333;
+    }
+
+    th, td {
+      color: #fff;
+    }
+  }
+}
+
+.play-icon {
+  cursor: pointer;
+  width: 30px;
 }

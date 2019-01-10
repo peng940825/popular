@@ -21,7 +21,7 @@
         this.$http.post(api).then((res) => {
           // console.log(res)
           if(res.data.success) {
-            vm.$router.push('/music')
+            vm.$router.push('/')
           }
         })
       }
