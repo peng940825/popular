@@ -122,7 +122,6 @@
         vm.isLoading = true
         this.$http.get(api).then((res) => {
           // console.log(res)
-          vm.isLoading = false
           res.data.products.forEach((item, index, array) => {
             if(index == 18 || index == 20 || index == 33 || index == 38 || index == 55) {
               vm.hot_songs.push(item)
@@ -131,6 +130,7 @@
           for(let i=0 ; i<5 ; i++) {
             vm.hot_songs[i].src = vm.hot_img[i]
           }
+          vm.isLoading = false
         })
       },
       addToCart(id, qty = 1) {
