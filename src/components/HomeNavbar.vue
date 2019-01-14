@@ -48,7 +48,7 @@
                   </router-link>
                   <span class="badge num-badge" style="background-color: #D2691E">
                     <Num></Num>
-                    <Audio></Audio>
+                    <!-- <Audio></Audio> -->
                   </span>
                 </li>
               </ul>
@@ -68,7 +68,7 @@
 
 <script>
   import Num from '@/components/Num'
-  import Audio from '@/components/Audio'
+  // import Audio from '@/components/Audio'
 
   export default {
     data() {

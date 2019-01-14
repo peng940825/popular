@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Audio></Audio>
     <HomeNavbar></HomeNavbar>
     <HomeCarousel></HomeCarousel>
     <router-view></router-view>

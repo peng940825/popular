@@ -20,6 +20,10 @@ import './bus'
 import Date from './filters/date'
 import Currency from './filters/currency'
 
+import Audio from './components/Audio'
+Vue.component('Audio', Audio)
+
+
 Vue.config.productionTip = false
 axios.defaults.withCredentials = true
 
