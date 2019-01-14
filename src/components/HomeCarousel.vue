@@ -105,8 +105,16 @@
       window.addEventListener('resize', vm.checkWidth)
       if(vm.w > 1200) {
         vm.checkContent = true
-      } else {
+        vm.span = 1380
+      } else if(vm.w >= 992 && vm.w <= 1200) {
         vm.checkContent = false
+        vm.span = 900
+      } else if(vm.w >= 768 && vm.w <= 992) {
+        vm.checkContent = false
+        vm.span = 692
+      } else if(vm.w < 768) {
+        vm.checkContent = false
+        vm.span = 468
       }
       const body = document.body
       body.addEventListener('keydown',function(e) {
