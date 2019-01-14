@@ -12,7 +12,7 @@
 
 .news-title {
   font-size: 36px;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
   letter-spacing: 2.5px;
 }
 
@@ -33,26 +33,43 @@
 }
 
 form .img-1 {
-  background-image: url(../../static/album_img/img1.png);
+  background-image: url(../album_img/img1.png);
 }
 
 form .img-2 {
-  background-image: url(../../static/album_img/img2.png);
+  background-image: url(../album_img/img2.png);
 }
 
 form .img-3 {
-  background-image: url(../../static/album_img/img3.png);
+  background-image: url(../album_img/img3.png);
 }
 
 form .img-4 {
-  background-image: url(../../static/album_img/img4.jpg);
+  background-image: url(../album_img/img4.jpg);
 }
 
 form .img-5 {
-  background-image: url(../../static/album_img/img5.png);
+  background-image: url(../album_img/img5.png);
 }
 
 form .img-6 {
-  background-image: url(../../static/album_img/img6.png);
+  background-image: url(../album_img/img6.png);
+}
+
+table tr {
+  border-top: 1px solid #333;
+}
+
+table tr:last-child {
+  border-bottom: 1px solid #333;
+}
+
+table tr th, table tr td {
+  color: #fff;
+}
+
+.play-icon {
+  cursor: pointer;
+  width: 30px;
 }
 /*# sourceMappingURL=home_news.css.map */
