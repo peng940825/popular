@@ -33,27 +33,27 @@
 }
 
 form .img-1 {
-  background-image: url(../album_img/img1.png);
+  background-image: url(../../static/album_img/img1.png);
 }
 
 form .img-2 {
-  background-image: url(../album_img/img2.png);
+  background-image: url(../../static/album_img/img2.png);
 }
 
 form .img-3 {
-  background-image: url(../album_img/img3.png);
+  background-image: url(../../static/album_img/img3.png);
 }
 
 form .img-4 {
-  background-image: url(../album_img/img4.jpg);
+  background-image: url(../../static/album_img/img4.jpg);
 }
 
 form .img-5 {
-  background-image: url(../album_img/img5.png);
+  background-image: url(../../static/album_img/img5.png);
 }
 
 form .img-6 {
-  background-image: url(../album_img/img6.png);
+  background-image: url(../../static/album_img/img6.png);
 }
 
 table tr {
