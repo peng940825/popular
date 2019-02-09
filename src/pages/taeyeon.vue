@@ -176,7 +176,7 @@ export default {
     addToCart(id, qty = 1) {
       const vm = this;
       let ans = vm.findSame(id);
-      console.log(ans);
+      // console.log(ans);
       if (ans === -1) {
         const api = `${process.env.API_PATH}/api/${process.env.SELF_PATH}/cart`;
         const cart = {

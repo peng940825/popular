@@ -144,6 +144,19 @@ export default {
       });
     },
     // +
+    getCart(id) {
+      const vm = this;
+      const api = `${process.env.API_PATH}/api/${process.env.SELF_PATH}/cart`;
+      vm.isLoading = true;
+      this.$http.get(api).then(res => {
+        // console.log(res);
+        for (let i = 0; i < res.data.data.carts.length; i++) {
+          vm.same_list.push(res.data.data.carts[i].product_id);
+        }
+        vm.isLoading = false;
+      });
+    },
+    // +
     findSame(id) {
       const vm = this;
       vm.same_list.push(id);
@@ -157,7 +170,7 @@ export default {
     addToCart(id, qty = 1) {
       const vm = this;
       let ans = vm.findSame(id);
-      console.log(ans);
+      // console.log(ans);
       if (ans === -1) {
         const api = `${process.env.API_PATH}/api/${process.env.SELF_PATH}/cart`;
         const cart = {
